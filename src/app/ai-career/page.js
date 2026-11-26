@@ -19,7 +19,7 @@ import {
   Video,
   MessageSquare,
   Wand2,
-  Github,
+Gift,
   FileText,
   Link as LinkIcon,
   Award,
@@ -1514,7 +1514,7 @@ export default function App() {
                     }
                     className="flex-1 px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-xs font-bold text-white flex items-center justify-center gap-1.5"
                   >
-                    <Github className="w-4 h-4" /> Sync GitHub
+                    <Gift className="w-4 h-4" /> Sync GitHub Gift
                   </button>
                   <button
                     onClick={() =>
@@ -2036,7 +2036,7 @@ export default function App() {
                     <CheckSquare className="w-5 h-5 text-emerald-400" /> Task Management & Progress
                   </h2>
                   <span className="text-xs font-mono px-2.5 py-1 rounded-lg bg-white/10 text-slate-200 flex items-center gap-1.5">
-                    <Github className="w-3.5 h-3.5" /> github.com/campusverse/mediquick
+                    <Gift className="w-3.5 h-3.5" /> github.com/campusverse/mediquick
                   </span>
                 </div>
 
