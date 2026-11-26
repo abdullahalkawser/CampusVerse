@@ -316,19 +316,7 @@ export default function Navbar() {
         </nav>
       </header>
 
-      {/* Auth Preview Switcher */}
-      <div className="fixed bottom-4 right-4 z-40">
-        <button
-          type="button"
-          onClick={() => {
-            setProfileOpen(false);
-            setIsLoggedIn((prev) => !prev);
-          }}
-          className="px-3 py-1.5 rounded-full text-[11px] font-medium bg-white/[0.06] hover:bg-white/[0.12] backdrop-blur-xl border border-white/10 text-slate-400 hover:text-slate-200 transition-colors"
-        >
-          {isLoggedIn ? 'Switch to Logged Out' : 'Switch to Logged In'}
-        </button>
-      </div>
+
     </>
   );
 }
