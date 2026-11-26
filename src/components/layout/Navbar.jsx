@@ -84,6 +84,8 @@ export default function Navbar() {
     };
   }, [activeTab, pathname]);
 
+  
+
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (
