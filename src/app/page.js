@@ -850,7 +850,7 @@ export default function Home() {
           
 
 
-          <Navbar></Navbar>
+          {/* <Navbar></Navbar> */}
 
 
           
