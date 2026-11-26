@@ -268,10 +268,6 @@ export default function Navbar() {
                       />
                     </div>
                     <span className="absolute bottom-0 right-0 sm:bottom-0.5 sm:right-0.5 w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-emerald-400 ring-2 ring-slate-950" />
-                  </button>
-
-                  {profileOpen && (
-                    <div className="animate-glass-door absolute right-0 mt-2.5 w-44 rounded-2xl bg-slate-900/90 backdrop-blur-2xl border border-white/15 shadow-[0_20px_45px_rgba(0,0,0,0.75),inset_0_1px_0_rgba(255,255,255,0.18)] p-1.5 z-50">
                       <Link
                         href="/profile"
                         onClick={() => {
@@ -283,18 +279,12 @@ export default function Navbar() {
                         <User className="w-4 h-4 text-cyan-300" />
                         <span>Profile</span>
                       </Link>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          setProfileOpen(false);
-                          setIsLoggedIn(false);
-                          triggerSweepAndNavigate('/login', null);
-                        }}
-                        className="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm font-medium text-rose-300 hover:text-rose-200 hover:bg-rose-500/15 transition-colors"
-                      >
-                        <LogOut className="w-4 h-4" />
-                        <span>Logout</span>
-                      </button>
+                  </button>
+
+                  {profileOpen && (
+                    <div className="animate-glass-door absolute right-0 mt-2.5 w-44 rounded-2xl bg-slate-900/90 backdrop-blur-2xl border border-white/15 shadow-[0_20px_45px_rgba(0,0,0,0.75),inset_0_1px_0_rgba(255,255,255,0.18)] p-1.5 z-50">
+                    
+                  
                     </div>
                   )}
                 </div>
