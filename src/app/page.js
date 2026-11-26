@@ -14,6 +14,7 @@ import {
   Smartphone, Clock3, Award, Compass, Bookmark,
   BookMarked, Video, Camera, Send, Lightbulb, Star
 } from "lucide-react";
+import Navbar from "@/components/layout/Navbar";
 
 /* ----------------------------------
    FEATURE DATA
@@ -845,56 +846,14 @@ export default function Home() {
       <div className="relative z-10">
         {/* NAVBAR */}
         <header className="sticky top-0 z-50 border-b border-white/[0.08] bg-[#080d19]/80 backdrop-blur-2xl">
-          <nav className="mx-auto flex h-[78px] max-w-7xl items-center justify-between px-5 lg:px-8">
-            <a href="#home" className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 shadow-lg shadow-cyan-500/20">
-                <GraduationCap size={25} />
-              </div>
-              <div>
-                <div className="text-xl font-black tracking-tight">
-                  Campus<span className="text-cyan-300">Verse</span>
-                </div>
-                <div className="text-[9px] font-bold uppercase tracking-[0.25em] text-slate-500">
-                  Smart Student Ecosystem
-                </div>
-              </div>
-            </a>
+       
+          
 
-            <div className="hidden items-center gap-8 lg:flex">
-              {[
-                ["Home", "home"],
-                ["Features", "features"],
-                ["About", "about"],
-                ["Roadmap", "roadmap"],
-                ["FAQ", "faq"]
-              ].map(([label, id]) => (
-                <button
-                  key={id}
-                  onClick={() => goTo(id)}
-                  className="text-sm font-medium text-slate-400 transition hover:text-cyan-300"
-                >
-                  {label}
-                </button>
-              ))}
-            </div>
 
-            <div className="hidden lg:block">
-              <button
-                onClick={() => goTo("features")}
-                className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 px-5 py-3 text-xs font-black text-slate-950 shadow-lg shadow-cyan-500/20 transition hover:-translate-y-0.5 hover:brightness-110"
-              >
-                Explore Platform <ArrowUpRight size={16} />
-              </button>
-            </div>
+          <Navbar></Navbar>
 
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="rounded-xl border border-white/10 bg-white/5 p-2.5 lg:hidden"
-              aria-label="Toggle navigation"
-            >
-              {menuOpen ? <X size={21} /> : <Menu size={21} />}
-            </button>
-          </nav>
+
+          
 
           <AnimatePresence>
             {menuOpen && (
