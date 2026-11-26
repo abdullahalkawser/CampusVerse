@@ -74,6 +74,7 @@ export default function Navbar() {
     }
   };
 
+  
   useEffect(() => {
     syncPillPosition();
     window.addEventListener('resize', syncPillPosition);
@@ -84,8 +85,6 @@ export default function Navbar() {
     };
   }, [activeTab, pathname]);
 
-  
-
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (
@@ -93,6 +92,7 @@ export default function Navbar() {
         !profileDropdownRef.current.contains(event.target)
       ) {
         setProfileOpen(false);
+
       }
     };
     document.addEventListener('mousedown', handleOutsideClick);
