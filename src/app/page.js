@@ -1363,7 +1363,8 @@ export default function Home() {
             </p>
           </div>
           <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} CampusVerse. All rights reserved.
+            © 2024 Team Byteslab · BUBT CSE 57 (Section 4). All rights reserved.
+            
           </p>
         </div>
       </footer>
@@ -1377,7 +1378,7 @@ export default function Home() {
           />
         )}
       </AnimatePresence>
-      
+
     </main>
   );
 }
