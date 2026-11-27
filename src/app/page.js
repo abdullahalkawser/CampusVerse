@@ -1377,6 +1377,7 @@ export default function Home() {
           />
         )}
       </AnimatePresence>
+      
     </main>
   );
 }
